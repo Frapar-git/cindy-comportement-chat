@@ -1,0 +1,136 @@
+[
+  {
+    "program": "Formation initiale",
+    "title": "Comportementaliste spécialiste du chat",
+    "logo": "/assets/animautopia.png",
+    "logoAlt": "Logo Animautopia",
+    "org": "Animautopia - 2024",
+    "items": [
+      "Ethologie animale et féline",
+      "Répertoire comportemental du chat domestique",
+      "Résolution des problématiques",
+      "Communication et psychologie humaine",
+      "Mémoire de fin de formation : \"L'impact du sevrage précoce : Quels sont les effets du sevrage précoce sur le comportement des chats ?\""
+    ]
+  },
+  {
+    "program": "Formation initiale",
+    "title": "ACACED",
+    "logo": "/assets/vox_animae.png",
+    "logoAlt": "Logo VOX Animae",
+    "org": "VOX Animae - 2024",
+    "text": "Attestation de Connaissances pour les Animaux de Compagnie d'Espèces Domestiques. Elle est obligatoire pour toute personne exerçant une activité liée aux animaux de compagnie d'espèces domestiques."
+  },
+  {
+    "program": "Masterclass",
+    "title": "Chat va bien, merci !",
+    "logo": "/assets/animautopia.png",
+    "logoAlt": "Logo Animautopia",
+    "org": "Animautopia - 2023",
+    "items": [
+      "Les besoins fondamentaux du chat familier : tout ce qu'il faut savoir.",
+      "Comment créer le meilleur environnement pour le chat qui vit avec nous ?",
+      "La relation chat-humain et toutes ses subtilités."
+    ]
+  },
+  {
+    "program": "Masterclass",
+    "title": "Mon chat m'attaque",
+    "logo": "/assets/parlons_chat.png",
+    "logoAlt": "Logo Les ateliers parlons chat",
+    "org": "Les ateliers parlons chat - 2024",
+    "items": [
+      "Identifier les différents types d'agression.",
+      "Comprendre et limiter les conduites agressives de son chat.",
+      "Savoir les anticiper et les éviter."
+    ]
+  },
+  {
+    "program": "Masterclass",
+    "title": "Adopter un chaton",
+    "logo": "/assets/parlons_chat.png",
+    "logoAlt": "Logo Les ateliers parlons chat",
+    "org": "Les ateliers parlons chat - 2024",
+    "items": [
+      "Ce à quoi il faut penser avant d'adopter un chat.",
+      "L'accueil du chaton (les premiers jours).",
+      "Comment aménager son environnement pour répondre aux besoins de son chaton.",
+      "Les éventuels dangers de la maison.",
+      "La notion de \"bêtise\" et les alternatives à la punition et à la réprimande.",
+      "Répondre aux besoins de son chat.",
+      "Respecter ses limites.",
+      "Connaître les signes de confort et d'inconfort pour mieux comprendre ses réactions."
+    ]
+  },
+  {
+    "program": "Masterclass",
+    "title": "Concilier bien-être et alimentation du chat",
+    "logo": "/assets/parlons_chat.png",
+    "logoAlt": "Logo Les ateliers parlons chat",
+    "org": "Les ateliers parlons chat - 2024",
+    "items": [
+      "Les besoins nutritionnels du chat.",
+      "Son rythme et ses régimes alimentaires.",
+      "Comment bien lire la composition d'une étiquette.",
+      "Les conséquences de la nourriture sur le comportement et des conseils personnalisés."
+    ]
+  },
+  {
+    "program": "Masterclass",
+    "title": "Avoir un chat sans dégâts",
+    "logo": "/assets/educhateur.png",
+    "logoAlt": "Logo Educhateur",
+    "org": "Educhateur - 2024",
+    "items": [
+      "Comprendre le chat.",
+      "Tout savoir sur les besoins du chat.",
+      "Comment déménager avec un chat."
+    ]
+  },
+  {
+    "program": "Masterclass",
+    "title": "Pourquoi mon chat fait ça ?",
+    "logo": "/assets/educhateur.png",
+    "logoAlt": "Logo Educhateur",
+    "org": "Educhateur - 2024",
+    "items": [
+      "La domestication du chat.",
+      "Décrypter ses comportements.",
+      "Ce que le chat peut (ou non) ressentir.",
+      "Quand nos biais faussent notre regard.",
+      "Croyances populaires autour du chat.",
+      "Retrouver un chat perdu : les bons réflexes."
+    ]
+  },
+  {
+    "program": "Masterclass",
+    "title": "Que faire pour que mon chat m'écoute ?",
+    "logo": "/assets/educhateur.png",
+    "logoAlt": "Logo Educhateur",
+    "org": "Educhateur - 2024",
+    "items": [
+      "Pourquoi mon chat ne m'écoute pas.",
+      "L'apprentissage chez le chat.",
+      "Comment éduquer un chat.",
+      "Les miaulements la nuit : déclencheurs, solutions, bouffée d'extinction.",
+      "Entraîner son chat de façon ludique.",
+      "Faciliter les soins par désensibilisation et contre-conditionnement."
+    ]
+  },
+  {
+    "program": "Masterclass",
+    "title": "Comment éviter les agressions chez le chat ?",
+    "logo": "/assets/educhateur.png",
+    "logoAlt": "Logo Educhateur",
+    "org": "Educhateur - 2024",
+    "items": [
+      "L'aspect médical : quand consulter le vétérinaire ?",
+      "L'analyse fonctionnelle ABC pour bien comprendre quel est le problème.",
+      "Comprendre le langage corporel du chat.",
+      "Les signes de douleur.",
+      "Les signes de stress ou d'inconfort.",
+      "Altercations entre chats et autres animaux.",
+      "Agression envers humains."
+    ]
+  }
+]

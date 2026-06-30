@@ -1,0 +1,205 @@
+---
+layout: base.njk
+title: Comportementaliste félin à Castelnau-le-Lez & en visio
+description: Cindy, comportementaliste félin diplômée à Castelnau-le-Lez (34). Consultations à domicile autour de Montpellier ou en visioconférence partout en France, et service de cat-sitting.
+---
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text reveal">
+      <p class="eyebrow"><i class="fa-solid fa-paw" aria-hidden="true"></i> Comportementaliste félin diplômée · Castelnau-le-Lez &amp; visio</p>
+      <h1>Mieux le comprendre,<br>pour mieux cohabiter.</h1>
+      <p class="hero-lead">Votre chat adopte des comportements qui vous dépassent, ou vous voulez bien démarrer votre cohabitation ? Je vous aide à comprendre votre compagnon et à retrouver une relation sereine, avec une approche bienveillante et sans jugement.</p>
+      <div class="hero-actions">
+        <a href="/contact/" class="button">{{ site.ctaLabel }}</a>
+        <a href="/prestations/" class="button button-ghost">Découvrir mes prestations</a>
+      </div>
+      <ul class="hero-trust">
+        <li><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Diplômée &amp; formée</li>
+        <li><i class="fa-solid fa-house-chimney" aria-hidden="true"></i> À domicile ou en visio</li>
+        <li><i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i> Suivi de 2 mois inclus</li>
+      </ul>
+    </div>
+    <div class="hero-media reveal">
+      <img src="/assets/carre.png" alt="Willy, un chat roux, dans les bras de Cindy" class="hero-img">
+      <div class="hero-badge">
+        <span class="hero-badge-num">130&nbsp;€</span>
+        <span class="hero-badge-label">la consultation,<br>suivi 2 mois inclus</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="usp-strip">
+  <div class="container usp-grid">
+    {% for usp in site.usps %}
+    <div class="usp reveal">
+      <i class="fa-solid {{ usp.icon }} usp-icon" aria-hidden="true"></i>
+      <h2 class="usp-title">{{ usp.title }}</h2>
+      <p class="usp-text">{{ usp.text }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="band band-cream">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Vous reconnaissez votre situation ?</p>
+      <h2>Des comportements qui ont toujours une explication</h2>
+      <p class="section-intro">Agressivité, éliminations hors du bac, miaulements insistants, cohabitation conflictuelle avec un autre chat ou un chien… Ces comportements ne sont ni une fatalité, ni de la « méchanceté ». Ensemble, on en cherche l'origine pour y répondre durablement.</p>
+    </div>
+    <div class="problem-grid">
+      <div class="problem-card reveal"><i class="fa-solid fa-cat" aria-hidden="true"></i><span>Conduites agressives, morsures, griffures</span></div>
+      <div class="problem-card reveal"><i class="fa-solid fa-toilet" aria-hidden="true"></i><span>Éliminations hors du bac à litière</span></div>
+      <div class="problem-card reveal"><i class="fa-solid fa-volume-high" aria-hidden="true"></i><span>Miaulements insistants, surtout la nuit</span></div>
+      <div class="problem-card reveal"><i class="fa-solid fa-paw" aria-hidden="true"></i><span>Cohabitation difficile entre animaux</span></div>
+      <div class="problem-card reveal"><i class="fa-solid fa-box-open" aria-hidden="true"></i><span>Adoption, déménagement, arrivée d'un bébé</span></div>
+      <div class="problem-card reveal"><i class="fa-solid fa-circle-question" aria-hidden="true"></i><span>Simplement mieux comprendre votre chat</span></div>
+    </div>
+    <div class="center-cta reveal">
+      <a href="/contact/" class="button">Parlons de votre situation</a>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="container media-row reverse">
+    <img class="media-img reveal" src="/assets/hug.png" alt="Cindy câline son chat">
+    <div class="media-text reveal">
+      <p class="eyebrow">Qui suis-je ?</p>
+      <h2>Une passion née d'une histoire personnelle</h2>
+      <p>Tout a commencé avec Willy, mon premier chat, qui a très vite présenté des conduites agressives. Après avoir cherché des « astuces » sur Internet sans succès, j'ai découvert le métier de comportementaliste félin — une révélation.</p>
+      <p>Profondément attachée à la cause animale, j'ai choisi d'allier mon sens du contact humain et mon engagement pour le bien-être des chats. Aujourd'hui, je vous accompagne avec la même bienveillance qui m'a aidée.</p>
+      <a href="/qui-suis-je/" class="link-arrow">Découvrir mon histoire <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</section>
+
+<section class="band band-cream">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Mes prestations</p>
+      <h2>Un accompagnement adapté à chaque besoin</h2>
+      <p class="section-intro">Des tarifs clairs, sans surprise, en présentiel autour de Montpellier ou en visioconférence partout en France.</p>
+    </div>
+    <div class="service-grid">
+      {% for s in services %}
+      <article class="service-card reveal{% if s.featured %} service-card-featured{% endif %}">
+        {% if s.featured %}<span class="service-tag">Le plus demandé</span>{% endif %}
+        <h3 class="service-name">{{ s.name }}</h3>
+        <p class="service-tagline">{{ s.tagline }}</p>
+        <p class="service-price">{{ s.price }} <span>· {{ s.duration }}</span></p>
+        <p class="service-summary">{{ s.summary }}</p>
+        <ul class="check-list">
+          {% for inc in s.includes %}
+          <li><i class="fa-solid fa-check" aria-hidden="true"></i> {{ inc }}</li>
+          {% endfor %}
+        </ul>
+        <a href="/prestations/#{{ s.id }}" class="button button-ghost button-sm">En savoir plus</a>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Comment ça se passe</p>
+      <h2>Un parcours simple et rassurant</h2>
+    </div>
+    <ol class="process-grid">
+      {% for p in site.process %}
+      <li class="process-step reveal">
+        <span class="process-num">{{ p.step }}</span>
+        <h3 class="process-title">{{ p.title }}</h3>
+        <p>{{ p.text }}</p>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+{% if testimonials.length %}
+<section class="band band-cream">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Ils m'ont fait confiance</p>
+      <h2>Ce qu'en disent les familles</h2>
+    </div>
+    <div class="testimonial-grid">
+      {% for t in testimonials %}
+      <figure class="testimonial reveal">
+        <div class="stars" aria-hidden="true">★★★★★</div>
+        <blockquote>{{ t.quote }}</blockquote>
+        <figcaption>— {{ t.author }}{% if t.location %}, {{ t.location }}{% endif %}</figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="band">
+  <div class="container">
+    <div class="trust-block reveal">
+      <div class="trust-text">
+        <p class="eyebrow">Une formation sérieuse</p>
+        <h2>Des conseils fondés sur l'éthologie féline</h2>
+        <p>Dans une profession non réglementée, les formations suivies sont le meilleur repère du sérieux d'un intervenant. Je me forme régulièrement pour vous proposer un accompagnement à jour des dernières connaissances.</p>
+        <a href="/formation/" class="link-arrow">Voir mes formations <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+      <div class="trust-logos">
+        <img src="/assets/animautopia.png" alt="Animautopia">
+        <img src="/assets/educhateur.png" alt="Educhateur">
+        <img src="/assets/parlons_chat.png" alt="Les ateliers parlons chat">
+        <img src="/assets/vox_animae.png" alt="VOX Animae">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band band-cream">
+  <div class="container zones-block">
+    <div class="zones-text reveal">
+      <p class="eyebrow"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Zone d'intervention</p>
+      <h2>À domicile autour de Montpellier,<br>en visio partout en France</h2>
+      <p>Je me déplace à Castelnau-le-Lez et dans les communes voisines. Où que vous soyez, la visioconférence permet un accompagnement tout aussi approfondi.</p>
+    </div>
+    <ul class="zones-list reveal">
+      {% for z in site.zones %}
+      <li><i class="fa-solid fa-paw" aria-hidden="true"></i> {{ z }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="band">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Questions fréquentes</p>
+      <h2>Vous vous posez sûrement ces questions</h2>
+    </div>
+    <div class="faq-list home-faq">
+      {% for item in faq.categories[0].items %}{% if loop.index0 < 4 %}
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">{{ item.q }}</button>
+        <div class="faq-answer hidden">{{ item.a | safe }}</div>
+      </div>
+      {% endif %}{% endfor %}
+    </div>
+    <div class="center-cta reveal">
+      <a href="/faq/" class="button button-ghost">Toutes les questions</a>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="container final-cta-inner reveal">
+    <h2>Prêt·e à retrouver une cohabitation sereine ?</h2>
+    <p>Décrivez-moi votre situation : je vous recontacte rapidement pour en discuter.</p>
+    <a href="/contact/" class="button button-light">{{ site.ctaLabel }}</a>
+    <p class="final-cta-note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Un comportementaliste ne se substitue pas au vétérinaire : une consultation vétérinaire est demandée au préalable pour écarter toute cause clinique.</p>
+  </div>
+</section>

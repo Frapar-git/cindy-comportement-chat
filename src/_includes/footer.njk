@@ -1,0 +1,32 @@
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-col footer-brand">
+      <img src="/assets/logo-cindy.png" alt="{{ site.name }}" class="footer-logo">
+      <p class="footer-tagline">Mieux comprendre votre chat, pour mieux cohabiter. Accompagnement bienveillant fondé sur l'éthologie féline.</p>
+    </div>
+
+    <nav class="footer-col" aria-label="Pages du site">
+      <h3 class="footer-heading">Navigation</h3>
+      {% for item in site.nav %}
+      <a href="{{ item.url }}" class="footer-link">{{ item.label }}</a>
+      {% endfor %}
+    </nav>
+
+    <div class="footer-col">
+      <h3 class="footer-heading">Contact</h3>
+      <a href="mailto:{{ site.email }}" class="footer-link"><i class="fa-solid fa-envelope" aria-hidden="true"></i> {{ site.email }}</a>
+      <a href="tel:{{ site.phone | replace(' ', '') }}" class="footer-link"><i class="fa-solid fa-phone" aria-hidden="true"></i> {{ site.phone }}</a>
+      <p class="footer-link"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> {{ site.address }}</p>
+      <a href="/contact/" class="button button-sm footer-cta">{{ site.ctaLabel }}</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p class="footer-copy">&copy; {{ "" | year }} {{ site.name }}. Tous droits réservés.</p>
+    <nav class="footer-legal" aria-label="Liens légaux">
+      {% for item in site.footerNav %}
+      <a href="{{ item.url }}" class="footer-legal-link{% if page.url == item.url %} active{% endif %}">{{ item.label }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</footer>

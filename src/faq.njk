@@ -1,0 +1,46 @@
+---
+layout: base.njk
+title: Questions fréquentes
+description: Réponses aux questions fréquentes sur les consultations de comportement félin et le service de cat-sitting.
+permalink: /faq/
+---
+
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">FAQ</p>
+    <h1>Vos questions, mes réponses</h1>
+    <p class="page-hero-lead">Tout ce qu'il faut savoir avant de faire appel à un comportementaliste félin.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="container">
+    <div class="faq-categories" role="tablist">
+      {% for cat in faq.categories %}
+      <button class="faq-category-button{% if loop.first %} active{% endif %}" data-category="{{ cat.id }}">{{ cat.label }}</button>
+      {% endfor %}
+    </div>
+
+    {% for cat in faq.categories %}
+    <div class="faq-container{% if not loop.first %} hidden{% endif %}" id="{{ cat.id }}">
+      <h2 class="sr-only-head">{{ cat.title }}</h2>
+      <div class="faq-list">
+        {% for item in cat.items %}
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">{{ item.q }}</button>
+          <div class="faq-answer hidden">{{ item.a | safe }}</div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="container final-cta-inner reveal">
+    <h2>Vous ne trouvez pas votre réponse ?</h2>
+    <p>Posez-moi directement votre question, je vous réponds rapidement.</p>
+    <a href="/contact/" class="button button-light">{{ site.ctaLabel }}</a>
+  </div>
+</section>

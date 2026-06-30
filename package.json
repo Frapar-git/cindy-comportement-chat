@@ -1,0 +1,14 @@
+{
+  "name": "cindy-comportementaliste-v2",
+  "version": "1.0.0",
+  "description": "Site vitrine V2 de Cindy, comportementaliste felin a Castelnau-le-Lez",
+  "private": true,
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6"
+  }
+}

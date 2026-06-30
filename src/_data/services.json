@@ -1,0 +1,53 @@
+[
+  {
+    "id": "consultation",
+    "name": "Consultation de comportement",
+    "tagline": "Résoudre un comportement qui vous inquiète",
+    "price": "130 €",
+    "priceNote": "Tarif unique, présentiel ou visio",
+    "duration": "1h30",
+    "image": "/assets/ground_cat.png",
+    "imageAlt": "Chat allongé au sol",
+    "summary": "Éliminations hors bac, conduites agressives, miaulements insistants, cohabitation conflictuelle… Je vous accompagne pour en comprendre les causes et vous proposer des solutions adaptées.",
+    "includes": [
+      "Entretien de 1h30",
+      "Recommandations personnalisées",
+      "Suivi de 2 mois inclus"
+    ],
+    "featured": true
+  },
+  {
+    "id": "prevention",
+    "name": "Entretien de prévention",
+    "tagline": "Bien démarrer ou approfondir vos connaissances",
+    "price": "80 €",
+    "priceNote": "Tarif unique, présentiel ou visio",
+    "duration": "1h",
+    "image": "/assets/play_cat.png",
+    "imageAlt": "Chat qui joue",
+    "summary": "Vous adoptez bientôt un chat, ou vous vivez déjà avec un ou plusieurs félins ? Je vous aide à comprendre leurs besoins et à offrir un environnement adapté, sécurisé et épanouissant.",
+    "includes": [
+      "Entretien de 1h",
+      "Recommandations personnalisées"
+    ],
+    "featured": false
+  },
+  {
+    "id": "cat-sitting",
+    "name": "Cat-sitting à domicile",
+    "tagline": "Veiller sur votre chat en votre absence",
+    "price": "Sur devis",
+    "priceNote": "Visites à domicile",
+    "duration": "1 passage / jour",
+    "image": "/assets/Grille_tarifaire.png",
+    "imageAlt": "Chat gardé à domicile",
+    "summary": "Une présence attentive et bienveillante, respectueuse du rythme et de la personnalité de votre chat. Bien plus qu'un simple remplissage de gamelle.",
+    "includes": [
+      "Nourrissage et eau propre",
+      "Nettoyage de la litière",
+      "Jeux, câlins ou présence calme",
+      "Nouvelles quotidiennes (message ou photo)"
+    ],
+    "featured": false
+  }
+]

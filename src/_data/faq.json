@@ -1,0 +1,62 @@
+{
+  "categories": [
+    {
+      "id": "meeting",
+      "label": "Entretien",
+      "title": "Entretien comportemental",
+      "items": [
+        {
+          "q": "Qu'est-ce qu'un comportementaliste félin et en quoi peut-il m'aider ?",
+          "a": "<p>Un comportementaliste félin est un professionnel spécialisé dans la compréhension et l'analyse du comportement des chats.</p><p>Son rôle est d'identifier l'origine des comportements gênants ou problématiques (conduites agressives, éliminations hors bac, miaulements excessifs, etc.) et de proposer des solutions adaptées à chaque situation.</p>"
+        },
+        {
+          "q": "Quelle est la différence entre un comportementaliste et un vétérinaire ?",
+          "a": "<p>Le vétérinaire est un expert de la santé animale. Il diagnostique et traite les maladies physiques qui peuvent être à l'origine d'un trouble du comportement.</p><p>Le comportementaliste, quant à lui, intervient lorsque le problème est d'ordre environnemental ou relationnel.</p><p>Nous travaillons en complémentarité : un comportementaliste ne se substitue en aucun cas à un professionnel de la santé animale. Il est essentiel de consulter un vétérinaire en amont de toute demande d'accompagnement comportemental, afin d'écarter toute cause clinique.</p>"
+        },
+        {
+          "q": "Dans quel cas consulter ?",
+          "a": "<p>Vous pouvez me consulter à titre préventif :</p><ul><li>Conseils avant adoption</li><li>Déménagement</li><li>Arrivée d'un bébé</li><li>Arrivée d'un congénère ou d'un chien</li><li>Emménagement de colocataire(s) / conjoint</li><li>Comprendre les besoins du chat</li></ul><p>Ou dans le cadre de problématiques déjà présentes :</p><ul><li>Éliminations hors bac</li><li>Miaulements insistants</li><li>Morsures / griffures / conduites agressives</li><li>Cohabitation conflictuelle (chat et / ou chien)</li></ul>"
+        },
+        {
+          "q": "Comment se déroule une consultation ?",
+          "a": "<p>Une consultation commence par une anamnèse, c'est-à-dire un historique détaillé de la vie de votre chat, que vous remplissez à l'aide d'un questionnaire avant notre entretien.</p><p>Pendant la consultation, nous discuterons de la problématique rencontrée, et je vous fournirai des explications sur les causes possibles du comportement. Je vous proposerai des recommandations concrètes et adaptées pour améliorer la situation, suivies d'un accompagnement sur deux mois afin d'ajuster les conseils en fonction des résultats observés.</p>"
+        },
+        {
+          "q": "Combien de séances sont nécessaires ?",
+          "a": "<p>Généralement, une seule séance suffit pour comprendre et mettre en place des solutions adaptées. Un suivi de deux mois est compris dans l'accompagnement afin de prendre le temps d'observer et d'ajuster mes recommandations si besoin.</p>"
+        },
+        {
+          "q": "Faut-il nécessairement consulter à domicile ou la visioconférence est-elle efficace ?",
+          "a": "<p>Étant donné que je n'interviens pas directement sur le chat, une consultation en visioconférence est tout à fait possible et parfaitement adaptée. Mes conseils sont basés sur la relation avec votre chat ainsi que l'environnement dans lequel il évolue. En visioconférence, je vous demanderai donc de m'envoyer une vidéo commentée montrant en détail l'environnement de votre chat, ce qui me permettra d'analyser la situation de manière tout aussi approfondie qu'en présentiel.</p>"
+        },
+        {
+          "q": "Ce que je ne suis pas en tant que comportementaliste",
+          "a": "<p>Je n'ai pas de baguette magique ni de communication directe avec votre chat. Mon rôle est de vous accompagner avec des outils concrets et adaptés pour mieux comprendre ses besoins et ses comportements. Le changement demande du temps, de l'observation et de la patience, c'est pourquoi mon accompagnement inclut un suivi sur deux mois pour ajuster nos actions en fonction de son évolution. En faisant appel à moi, vous devenez les acteurs du changement, pour construire ensemble une cohabitation harmonieuse avec votre compagnon.</p>"
+        }
+      ]
+    },
+    {
+      "id": "catsitting",
+      "label": "Cat-sitting",
+      "title": "Cat-sitting",
+      "items": [
+        {
+          "q": "Comment se passe une garde de chat à domicile ?",
+          "a": "<p>Lors d'une garde, je me rends à votre domicile pour m'occuper de votre chat en votre absence. Chaque visite inclut l'alimentation, le renouvellement de l'eau, le nettoyage de la litière, ainsi qu'un temps d'interaction adapté à sa personnalité (caresses, jeux, simple présence rassurante...).</p>"
+        },
+        {
+          "q": "Combien de visites par jour proposes-tu ?",
+          "a": "<p>Je propose un passage quotidien de 1 heure durant votre absence. Nous pouvons bien sûr ajuster cette fréquence en fonction de vos préférences et / ou des besoins de votre chat (administration de médicament à heure fixe par exemple).</p>"
+        },
+        {
+          "q": "Quels services incluent tes visites (jeux, alimentation, nettoyage de la litière...) ?",
+          "a": "<p>Chaque visite comprend :</p><ul><li>L'alimentation et l'eau fraîche,</li><li>Le nettoyage de la litière,</li><li>Des interactions adaptées à votre chat (jeux, câlins, présence rassurante),</li><li>L'administration de médicaments si besoin,</li><li>Un petit compte-rendu après chaque passage pour vous donner des nouvelles.</li></ul>"
+        },
+        {
+          "q": "Mon chat est craintif, comment t'adaptes-tu ?",
+          "a": "<p>Chaque chat a sa propre personnalité. Pour les chats plus craintifs, je respecte leur rythme et leur besoin d'espace. Mon approche consiste à observer, m'adapter et leur offrir une présence sans jamais forcer l'interaction.</p>"
+        }
+      ]
+    }
+  ]
+}

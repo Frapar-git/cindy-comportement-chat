@@ -1,0 +1,62 @@
+---
+layout: base.njk
+title: Ma formation
+description: Formations et masterclass en comportement félin (Animautopia, VOX Animae, Educhateur, Les ateliers parlons chat) pour un accompagnement sérieux et à jour.
+permalink: /formation/
+---
+
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">Ma formation</p>
+    <h1>Un accompagnement fondé sur des bases solides</h1>
+    <p class="page-hero-lead">Dans une profession non réglementée, les formations suivies sont le meilleur repère du sérieux d'un intervenant.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="container formation-hero">
+    <figure class="formation-hero-media reveal">
+      <img src="/assets/cat-laptop.jpg" alt="Chat installé devant un ordinateur portable">
+    </figure>
+    <div class="formation-hero-text reveal">
+      <p>Être professionnel du comportement félin, c'est s'appuyer sur des bases solides issues d'une formation sérieuse.</p>
+      <p>Dans une profession encore non réglementée, les formations suivies sont un repère essentiel pour juger du sérieux d'un intervenant.</p>
+      <p>Et comme notre compréhension du chat évolue sans cesse, actualiser régulièrement ses connaissances permet de mieux accompagner l'animal et les humains qui partagent sa vie.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band band-cream">
+  <div class="container">
+    <div class="cards-grid">
+      {% for f in formations %}
+      <article class="formation-card reveal">
+        <div class="formation-card-head">
+          <img src="{{ f.logo }}" alt="{{ f.logoAlt }}" class="formation-card-logo">
+          <span class="formation-card-program">{{ f.program }}</span>
+        </div>
+        <h2 class="formation-card-title">{{ f.title }}</h2>
+        <p class="formation-card-org"><em>{{ f.org }}</em></p>
+        {% if f.items %}
+        <ul class="bullet-list">
+          {% for item in f.items %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+        {% if f.text %}
+        <p>{{ f.text }}</p>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="container final-cta-inner reveal">
+    <h2>Une question ? Besoin d'être recontacté·e ?</h2>
+    <p>Je vous réponds dans les plus brefs délais.</p>
+    <a href="/contact/" class="button button-light">{{ site.ctaLabel }}</a>
+  </div>
+</section>
