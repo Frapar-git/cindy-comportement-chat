@@ -39,12 +39,12 @@
     "Et partout en France en visioconférence"
   ],
   "nav": [
-    { "label": "Accueil", "url": "/" },
-    { "label": "Qui suis-je ?", "url": "/qui-suis-je/" },
-    { "label": "Prestations", "url": "/prestations/" },
-    { "label": "Formation", "url": "/formation/" },
-    { "label": "FAQ", "url": "/faq/" },
-    { "label": "Contact", "url": "/contact/" }
+    { "label": "Accueil", "url": "/", "icon": "fa-house" },
+    { "label": "Qui suis-je ?", "url": "/qui-suis-je/", "icon": "fa-paw" },
+    { "label": "Prestations", "url": "/prestations/", "icon": "fa-list-check" },
+    { "label": "Formation", "url": "/formation/", "icon": "fa-graduation-cap" },
+    { "label": "FAQ", "url": "/faq/", "icon": "fa-circle-question" },
+    { "label": "Contact", "url": "/contact/", "icon": "fa-envelope" }
   ],
   "footerNav": [
     { "label": "Mentions légales", "url": "/mentions-legales/" },

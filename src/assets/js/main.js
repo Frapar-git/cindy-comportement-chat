@@ -4,6 +4,18 @@
   function initHeader() {
     const header = document.getElementById("site-header");
     if (!header) return;
+
+    const setHeight = () =>
+      document.documentElement.style.setProperty(
+        "--header-h",
+        header.offsetHeight + "px"
+      );
+    setHeight();
+    window.addEventListener("resize", setHeight, { passive: true });
+    if ("ResizeObserver" in window) {
+      new ResizeObserver(setHeight).observe(header);
+    }
+
     const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 8);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -12,28 +24,29 @@
   function initMenu() {
     const hamburger = document.querySelector(".hamburger");
     const nav = document.getElementById("nav-menu");
+    const backdrop = document.getElementById("nav-backdrop");
     if (!hamburger || !nav) return;
 
-    const close = () => {
-      nav.classList.remove("active");
-      hamburger.classList.remove("active");
-      hamburger.setAttribute("aria-expanded", "false");
+    const setOpen = (open) => {
+      nav.classList.toggle("active", open);
+      hamburger.classList.toggle("active", open);
+      hamburger.setAttribute("aria-expanded", String(open));
+      document.body.classList.toggle("nav-open", open);
+      if (backdrop) backdrop.classList.toggle("active", open);
     };
+
+    const close = () => setOpen(false);
 
     hamburger.addEventListener("click", (e) => {
       e.stopPropagation();
-      const open = nav.classList.toggle("active");
-      hamburger.classList.toggle("active", open);
-      hamburger.setAttribute("aria-expanded", String(open));
+      setOpen(!nav.classList.contains("active"));
     });
+
+    if (backdrop) backdrop.addEventListener("click", close);
 
     nav.querySelectorAll("a").forEach((link) =>
       link.addEventListener("click", close)
     );
-
-    document.addEventListener("click", (e) => {
-      if (nav.classList.contains("active") && !nav.contains(e.target)) close();
-    });
 
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") close();

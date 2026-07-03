@@ -9,10 +9,21 @@
     </a>
 
     <nav class="primary-nav" id="nav-menu" aria-label="Navigation principale">
-      {% for item in site.nav %}
-      <a href="{{ item.url }}" class="nav-link{% if page.url == item.url %} active{% endif %}">{{ item.label }}</a>
-      {% endfor %}
+      <p class="nav-title">Menu</p>
+      <div class="nav-links">
+        {% for item in site.nav %}
+        <a href="{{ item.url }}" class="nav-link{% if page.url == item.url %} active{% endif %}">
+          <span class="nav-link-icon" aria-hidden="true"><i class="fa-solid {{ item.icon }}"></i></span>
+          <span class="nav-link-label">{{ item.label }}</span>
+        </a>
+        {% endfor %}
+      </div>
       <a href="/contact/" class="button button-sm nav-cta">{{ site.ctaLabel }}</a>
+
+      <div class="nav-extra">
+        <a class="nav-contact" href="tel:{{ site.phone | replace(' ', '') }}"><i class="fa-solid fa-phone" aria-hidden="true"></i> {{ site.phone }}</a>
+        <a class="nav-contact" href="mailto:{{ site.email }}"><i class="fa-solid fa-envelope" aria-hidden="true"></i> {{ site.email }}</a>
+      </div>
     </nav>
 
     <button class="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-menu">
@@ -21,4 +32,5 @@
       <span class="hamburger-line"></span>
     </button>
   </div>
+  <div class="nav-backdrop" id="nav-backdrop"></div>
 </header>

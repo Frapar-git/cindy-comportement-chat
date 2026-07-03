@@ -22,6 +22,20 @@
     "text": "Attestation de Connaissances pour les Animaux de Compagnie d'Espèces Domestiques. Elle est obligatoire pour toute personne exerçant une activité liée aux animaux de compagnie d'espèces domestiques."
   },
   {
+    "program": "Formation initiale",
+    "title": "Intervenant en Comportement Félin (ICF)",
+    "logo": "/assets/educhateur.png",
+    "logoAlt": "Logo Educhateur",
+    "org": "Educhateur",
+    "items": [
+      "Connaissance du chat : éthologie, émotions, comportements anormaux et mécanique de l'apprentissage.",
+      "Analyse fonctionnelle (méthode A-B-C) et lecture des données comportementales.",
+      "Résolution des problématiques : éliminations hors bac, agressions, comportements intempestifs et conflits entre chats.",
+      "Élaboration de plans d'intervention personnalisés et suivi du client.",
+      "Accompagnement humain, psychologie du client, éthique et déontologie."
+    ]
+  },
+  {
     "program": "Masterclass",
     "title": "Chat va bien, merci !",
     "logo": "/assets/animautopia.png",

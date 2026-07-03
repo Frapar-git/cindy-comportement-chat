@@ -5,13 +5,6 @@
       <p class="footer-tagline">Mieux comprendre votre chat, pour mieux cohabiter. Accompagnement bienveillant fondé sur l'éthologie féline.</p>
     </div>
 
-    <nav class="footer-col" aria-label="Pages du site">
-      <h3 class="footer-heading">Navigation</h3>
-      {% for item in site.nav %}
-      <a href="{{ item.url }}" class="footer-link">{{ item.label }}</a>
-      {% endfor %}
-    </nav>
-
     <div class="footer-col">
       <h3 class="footer-heading">Contact</h3>
       <a href="mailto:{{ site.email }}" class="footer-link"><i class="fa-solid fa-envelope" aria-hidden="true"></i> {{ site.email }}</a>

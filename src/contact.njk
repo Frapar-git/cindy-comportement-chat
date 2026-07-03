@@ -11,6 +11,15 @@ mainClass: contact-main
     <p class="eyebrow">Contact</p>
     <h1>Parlons de votre chat</h1>
     <p class="page-hero-lead">Pour toute question ou demande de rendez-vous, remplissez le formulaire ci-dessous. Je vous recontacte dans les plus brefs délais.</p>
+
+    <div class="next-steps reveal">
+      <p class="next-steps-title">Que se passe-t-il ensuite ?</p>
+      <ol class="next-steps-grid">
+        <li><span class="next-step-num">1</span><span class="next-step-text">Je lis votre message et vous recontacte rapidement.</span></li>
+        <li><span class="next-step-num">2</span><span class="next-step-text">On convient ensemble d'un rendez-vous (domicile ou visio).</span></li>
+        <li><span class="next-step-num">3</span><span class="next-step-text">Vous recevez un questionnaire à remplir avant l'entretien.</span></li>
+      </ol>
+    </div>
   </div>
 </section>
 
@@ -50,6 +59,11 @@ mainClass: contact-main
       </form>
     </section>
 
+    <div class="disclaimer-card reveal">
+      <span class="info-icon" aria-hidden="true"><i class="fa-solid fa-circle-info"></i></span>
+      <p>Un comportementaliste ne se substitue pas au vétérinaire. Avant tout entretien, une consultation chez le vétérinaire vous est demandée afin d'écarter toute cause clinique.</p>
+    </div>
+
     <aside class="contact-card contact-info-section">
       <h2>Coordonnées</h2>
       <ul class="contact-list">
@@ -57,14 +71,6 @@ mainClass: contact-main
         <li><span class="info-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></span> <a href="tel:{{ site.phone | replace(' ', '') }}">{{ site.phone }}</a></li>
         <li><span class="info-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></span> <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
       </ul>
-      <div class="contact-steps">
-        <h3>Que se passe-t-il ensuite ?</h3>
-        <ol>
-          <li>Je lis votre message et vous recontacte rapidement.</li>
-          <li>On convient ensemble d'un rendez-vous (domicile ou visio).</li>
-          <li>Vous recevez un questionnaire à remplir avant l'entretien.</li>
-        </ol>
-      </div>
       <div class="map-container">
         <iframe
           title="Localisation à Castelnau-le-Lez"
@@ -74,12 +80,5 @@ mainClass: contact-main
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </aside>
-  </div>
-
-  <div class="container">
-    <div class="disclaimer-card reveal">
-      <span class="info-icon" aria-hidden="true"><i class="fa-solid fa-circle-info"></i></span>
-      <p>Un comportementaliste ne se substitue pas au vétérinaire. Avant tout entretien, une consultation chez le vétérinaire vous est demandée afin d'écarter toute cause clinique.</p>
-    </div>
   </div>
 </section>
