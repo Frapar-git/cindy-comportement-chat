@@ -24,8 +24,8 @@
     "price": "80 €",
     "priceNote": "Tarif unique, présentiel ou visio",
     "duration": "1h",
-    "image": "/assets/play_cat.png",
-    "imageAlt": "Chat qui joue",
+    "image": "/assets/photo-02.png",
+    "imageAlt": "Chat jouant avec une corde",
     "summary": "Vous adoptez bientôt un chat, ou vous vivez déjà avec un ou plusieurs félins ? Je vous aide à comprendre leurs besoins et à offrir un environnement adapté, sécurisé et épanouissant.",
     "includes": [
       "Entretien de 1h",
@@ -40,7 +40,7 @@
     "price": "Sur devis",
     "priceNote": "Visites à domicile",
     "duration": "1 passage / jour",
-    "image": "/assets/chat-cafe.png",
+    "image": "/assets/photo-04.png",
     "imageAlt": "Chat dans un café",
     "summary": "Confier son chat à une autre personne n'est jamais anodin. Formée au comportement félin, j'adapte chacune de mes visites à son rythme, à ses besoins et à sa personnalité afin qu'il vive votre absence dans les meilleures conditions possibles.",
     "includes": [

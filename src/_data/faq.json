@@ -7,7 +7,7 @@
       "items": [
         {
           "q": "Qu'est-ce qu'un comportementaliste félin et en quoi peut-il m'aider ?",
-          "a": "<p>Un comportementaliste félin accompagne les humains confrontés à une difficulté avec leur chat ou souhaitant prévenir l'apparition de certains problèmes.</p><p>Son rôle est d'identifier les différents facteurs qui contribuent à une situation donnée (conduites agressives, éliminations hors bac, miaulements excessifs, etc.) afin de proposer des recommandations adaptées à chaque chat, à son environnement et au quotidien de sa famille.</p>"
+          "a": "<p>Un comportementaliste félin accompagne les humains confrontés à une difficulté avec leur chat ou souhaitant prévenir l'apparition de certains problèmes.</p><p>Son rôle est d'identifier les différents facteurs qui contribuent à une situation donnée (conduites agressives, éliminations hors bac, miaulements excessifs, etc.) afin de proposer des recommandations adaptées à chaque chat, son environnement et au quotidien de sa famille.</p>"
         },
         {
           "q": "Quelle est la différence entre un comportementaliste et un vétérinaire ?",
@@ -15,7 +15,7 @@
         },
         {
           "q": "Quand consulter ?",
-          "a": "<p>Vous pouvez me consulter à titre préventif :</p><ul><li>Conseils avant adoption</li><li>Déménagement</li><li>Arrivée d'un nouveau membre du foyer (bébé, conjoint, colocataire...)</li><li>Arrivée d'un congénère ou d'un chien</li></ul><p>Ou dans le cadre de problématiques déjà présentes :</p><ul><li>Éliminations hors bac</li><li>Miaulements insistants</li><li>Morsures, griffures ou conduites agressives</li><li>Cohabitation conflictuelle avec un autre chat ou un chien</li></ul><p>Il n'est pas nécessaire d'attendre qu'une situation devienne difficile à gérer pour consulter. Une consultation préventive permet souvent d'anticiper certaines difficultés et d'éviter l'installation de comportements gênants.</p>"
+          "a": "<p>Vous pouvez me consulter à titre préventif&nbsp;:</p><ul><li>Conseils avant adoption</li><li>Déménagement</li><li>Arrivée d'un nouveau membre du foyer (bébé, conjoint, colocataire...)</li><li>Arrivée d'un congénère ou d'un chien</li></ul><p class=\"faq-spacer\">Ou dans le cadre de problématiques déjà présentes&nbsp;:</p><ul><li>Éliminations hors bac</li><li>Miaulements insistants</li><li>Morsures, griffures ou conduites agressives</li><li>Cohabitation conflictuelle avec un autre chat ou un chien</li></ul><p class=\"faq-spacer\">Il n'est pas nécessaire d'attendre qu'une situation devienne difficile à gérer pour consulter. Une consultation préventive permet souvent d'anticiper certaines difficultés et d'éviter l'installation de comportements gênants.</p>"
         },
         {
           "q": "Comment se déroule une consultation ?",
@@ -38,7 +38,7 @@
       "items": [
         {
           "q": "Comment se passe une garde de chat à domicile ?",
-          "a": "<p>Avant la première garde, nous convenons d'une pré-visite à votre domicile. Cette rencontre nous permet de faire connaissance, d'échanger sur les habitudes et les besoins de votre chat, de récupérer les clés, de répondre à vos éventuelles questions et de définir ensemble le rythme de visites le plus adapté à votre situation.</p><p>Pendant votre absence, j'effectue les visites selon ce qui a été convenu ensemble.</p><p>Chaque visite comprend :</p><ul><li>Le renouvellement de l'eau et la distribution de la nourriture selon vos consignes.</li><li>Le nettoyage de la litière.</li><li>Des moments de jeu, d'interaction ou simplement de présence, selon le tempérament et les envies de votre chat.</li></ul><p>Après chaque visite, vous recevez des nouvelles accompagnées de photos ou de vidéos.</p>"
+          "a": "<p>Avant la première garde, nous convenons d'une pré-visite à votre domicile. Cette rencontre nous permet de faire connaissance, d'échanger sur les habitudes et les besoins de votre chat, de récupérer les clés, de répondre à vos éventuelles questions et de définir ensemble le rythme de visites le plus adapté à votre situation.</p><p>Pendant votre absence, j'effectue les visites selon ce qui a été convenu ensemble.</p><p>Chaque visite comprend&nbsp;:</p><ul><li>Le renouvellement de l'eau et la distribution de la nourriture selon vos consignes.</li><li>Le nettoyage de la litière.</li><li>Des moments de jeu, d'interaction ou simplement de présence, selon le tempérament et les envies de votre chat.</li></ul><p class=\"faq-spacer\">Après chaque visite, vous recevez des nouvelles accompagnées de photos ou de vidéos.</p>"
         },
         {
           "q": "Comment déterminer le nombre de visites dont mon chat a besoin ?",

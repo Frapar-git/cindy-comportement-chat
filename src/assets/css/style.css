@@ -241,6 +241,12 @@ main {
 .section-intro {
   color: var(--muted);
   font-size: 1.08rem;
+  text-align: justify;
+  text-wrap: pretty;
+}
+
+.section-head .section-intro {
+  text-align: center;
 }
 
 .center-cta {
@@ -433,7 +439,9 @@ body.nav-open {
 .hero-lead {
   font-size: 1.15rem;
   color: var(--muted);
-  max-width: 36ch;
+  max-width: none;
+  text-align: justify;
+  text-wrap: pretty;
 }
 
 .hero-actions {
@@ -446,6 +454,7 @@ body.nav-open {
 .hero-trust {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.6rem 1.4rem;
   list-style: none;
   color: var(--ink);
@@ -457,6 +466,12 @@ body.nav-open {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.hero-trust-wide {
+  flex: 1 1 100%;
+  justify-content: center;
+  text-align: center;
 }
 
 .hero-trust i {
@@ -471,6 +486,7 @@ body.nav-open {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
+  object-position: center 25%;
   border-radius: calc(var(--radius) + 8px);
   box-shadow: var(--shadow);
 }
@@ -539,10 +555,26 @@ body.nav-open {
   margin-bottom: 0.3rem;
 }
 
+.media-text p,
+.zones-text p,
+.service-summary,
+.pricing-card > p:not(.pricing-price):not(.pricing-meta):not(.pricing-includes):not(.pricing-note) {
+  text-align: justify;
+  text-wrap: pretty;
+}
+
+.catsitting-intro-text p:not(.eyebrow) {
+  text-align: left;
+  max-width: 48ch;
+}
+
 .usp-text {
   color: var(--muted);
   font-size: 0.95rem;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 22ch;
+  text-align: center;
+  text-wrap: pretty;
 }
 
 /* ===========================================================================
@@ -564,6 +596,14 @@ body.nav-open {
   padding: 1.1rem 1.3rem;
   font-weight: 600;
   box-shadow: var(--shadow-soft);
+}
+
+.problem-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  display: block;
 }
 
 .problem-card i {
@@ -602,6 +642,15 @@ body.nav-open {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   object-fit: cover;
+  object-position: center 28%;
+}
+
+.media-img-short {
+  max-height: 280px;
+  aspect-ratio: 5 / 4;
+  width: 100%;
+  object-fit: cover;
+  object-position: center 70%;
 }
 
 .media-text h2 {
@@ -927,6 +976,11 @@ body.nav-open {
 .faq-answer ul {
   padding-left: 1.2rem;
   list-style: disc;
+  margin-bottom: 0;
+}
+
+.faq-answer .faq-spacer {
+  margin-top: 1.15rem;
 }
 
 .hidden {
@@ -990,6 +1044,7 @@ body.nav-open {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  object-position: center 28%;
   border-radius: var(--radius-sm);
   margin: 0.6rem 0 1rem;
 }
@@ -1013,31 +1068,60 @@ body.nav-open {
   margin-bottom: 0.4rem;
 }
 
-.pricing-card .button {
-  margin-top: auto;
+.pricing-card .check-list {
+  flex: 1 1 auto;
 }
 
 .pricing-note {
-  margin: 1rem 0 0;
-  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: auto 0 1.15rem;
+  min-height: 3.8em;
+  font-size: 0.8rem;
+  font-style: italic;
   color: var(--muted);
-  line-height: 1.45;
+  line-height: 1.4;
+}
+
+.pricing-note i {
+  color: var(--brand);
+  flex-shrink: 0;
+}
+
+.pricing-card .button {
+  margin-top: 0;
 }
 
 .payment-note {
-  margin: clamp(1.5rem, 3vw, 2.2rem) auto 0;
-  max-width: 52ch;
-  text-align: center;
-  font-size: 0.98rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  margin: 1rem auto;
+  max-width: 42rem;
+  padding: 0.85rem 1.2rem;
+  text-align: left;
+  font-size: 0.95rem;
+  line-height: 1.45;
   color: var(--ink);
-  font-style: italic;
+  background-color: var(--sand);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--brand);
+}
+
+.payment-note i {
+  color: var(--brand);
+  flex-shrink: 0;
 }
 
 .offer-chooser {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--gap);
-  margin-top: clamp(1.5rem, 3vw, 2.5rem);
+  max-width: 920px;
+  margin: clamp(1.5rem, 3vw, 2.5rem) auto 0;
 }
 
 .offer-chooser-card {
@@ -1112,6 +1196,7 @@ body.nav-open {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  object-position: center 72%;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
@@ -1120,21 +1205,100 @@ body.nav-open {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: clamp(1.5rem, 4vw, 2.5rem);
-  align-items: start;
+  align-items: stretch;
 }
 
-.catsitting-pricing {
+.catsitting-card {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 1rem;
+  background-color: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: clamp(1.4rem, 3vw, 1.9rem);
+  box-shadow: var(--shadow-soft);
 }
 
-.catsitting-grid-img {
-  width: 100%;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-soft);
-  border: 1px solid var(--line);
-  background: var(--white);
+.catsitting-card-head {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.catsitting-card-head h3 {
+  margin: 0;
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+}
+
+.catsitting-card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  background-color: var(--brand);
+  color: var(--white);
+  flex-shrink: 0;
+  font-size: 0.95rem;
+}
+
+.catsitting-card .check-list {
+  margin: 0;
+}
+
+.catsitting-card-note {
+  margin: auto 0 0;
+  font-size: 0.84rem;
+  font-style: italic;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.catsitting-card .pricing-note {
+  margin: 0;
+  min-height: 0;
+}
+
+.tariff-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0;
+}
+
+.tariff-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.tariff-list li:first-child {
+  padding-top: 0.2rem;
+}
+
+.tariff-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0.2rem;
+}
+
+.tariff-list strong {
+  font-family: var(--font-head);
+  font-weight: 700;
+  color: var(--brand-dark);
+  white-space: nowrap;
+}
+
+.catsitting-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.1rem;
+  margin-bottom: 0.25rem;
 }
 
 .card-soft {
@@ -1236,7 +1400,10 @@ body.nav-open {
   padding: clamp(1.8rem, 4vw, 3rem);
   box-shadow: var(--shadow-soft);
   text-align: justify;
-  hyphens: auto;
+  hyphens: none;
+  -webkit-hyphens: none;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 .formation-hero-text p {
@@ -1441,11 +1608,49 @@ body.nav-open {
 
 .prestations-main > .band:first-child {
   padding-top: clamp(0.5rem, 1.5vw, 1.25rem);
+  padding-bottom: clamp(0.75rem, 2vw, 1.25rem);
+}
+
+.prestations-main > .band#consultations {
+  padding-top: clamp(0.75rem, 2vw, 1.5rem);
+  padding-bottom: 1rem;
+}
+
+.prestations-main .band-tight-top .section-head {
+  margin-bottom: clamp(1rem, 2vw, 1.5rem);
+}
+
+.prestations-main #consultations > .container > .section-head {
+  margin-bottom: 1.75rem;
+}
+
+.prestations-main #consultations > .container > .section-head + .pricing-grid {
+  margin-top: 0;
 }
 
 .prestations-main .section-head {
   max-width: 1000px;
   margin-bottom: clamp(1.75rem, 3.5vw, 2.75rem);
+}
+
+.prestations-main .offer-chooser {
+  margin-top: clamp(0.75rem, 2vw, 1.25rem);
+  max-width: 920px;
+}
+
+.prestations-main #cat-sitting {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.prestations-main #consultations .payment-note,
+.prestations-main #cat-sitting .payment-note {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.prestations-main #cat-sitting + .final-cta {
+  padding-top: 1.5rem;
 }
 
 .prestations-main .section-head h1 {
@@ -1635,11 +1840,24 @@ body.nav-open {
 
 .legal-page h1 {
   text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.legal-page h2 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.6rem;
+  font-size: clamp(1.15rem, 2vw, 1.35rem);
 }
 
 .legal-page p,
 .legal-page li {
   color: var(--muted);
+}
+
+.legal-page a {
+  color: var(--brand-dark);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .legal-page ul {
@@ -1650,6 +1868,10 @@ body.nav-open {
 
 .legal-page li {
   margin-bottom: 0.4rem;
+}
+
+.legal-main .band {
+  padding-top: clamp(1.25rem, 3vw, 2rem);
 }
 
 /* ===========================================================================
@@ -2012,6 +2234,21 @@ body.nav-open {
 
   .media-img {
     max-height: 360px;
+    object-position: center 65%;
+  }
+
+  .media-img-short {
+    max-height: 220px;
+    object-position: center 75%;
+  }
+
+  .catsitting-intro-img {
+    object-position: center 70%;
+  }
+
+  .hero-img,
+  .pricing-card-img {
+    object-position: center 30%;
   }
 
   .trust-block,
