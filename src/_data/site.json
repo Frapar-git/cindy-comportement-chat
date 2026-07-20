@@ -5,7 +5,7 @@
   "url": "https://cindy-comportement-chat.fr",
   "description": "Cindy, comportementaliste félin diplômée à Castelnau-le-Lez (34). Consultations à domicile ou en visioconférence partout en France, et service de cat-sitting.",
   "email": "cindy.comportementchat@gmail.com",
-  "phone": "01 23 45 67 89",
+  "phone": "06 09 97 00 20",
   "address": "34170 Castelnau-le-Lez, France",
   "city": "Castelnau-le-Lez",
   "region": "Occitanie",
@@ -13,6 +13,7 @@
   "geo": { "lat": "43.6341124", "lng": "3.9026777" },
   "formNextUrl": "https://cindy-comportement-chat.fr/merci/",
   "ctaLabel": "Prendre rendez-vous",
+  "pageSignature": "Votre chat est unique, comme vous",
   "social": {
     "instagram": "",
     "facebook": ""
@@ -20,14 +21,14 @@
   "usps": [
     { "icon": "fa-graduation-cap", "title": "Diplômée et formée", "text": "Une approche fondée sur l'éthologie féline et des formations actualisées." },
     { "icon": "fa-heart", "title": "Bienveillante, sans jugement", "text": "Un accompagnement adapté à votre chat, à vous et à votre quotidien." },
-    { "icon": "fa-location-dot", "title": "À domicile ou en visio", "text": "Autour de Montpellier en présentiel, partout en France en visioconférence." },
-    { "icon": "fa-clock-rotate-left", "title": "Suivi de 2 mois inclus", "text": "On ajuste ensemble les recommandations jusqu'à voir des résultats." }
+    { "icon": "fa-location-dot", "title": "À domicile ou en visio", "text": "Autour de Montpellier à domicile, où que vous soyez en visioconférence." },
+    { "icon": "fa-clock-rotate-left", "title": "Suivi 3 mois / compte-rendu inclus", "text": "On ajuste ensemble les recommandations jusqu'à voir des résultats." }
   ],
   "process": [
     { "step": "1", "title": "Vous me contactez", "text": "Vous décrivez votre situation via le formulaire. Je vous recontacte rapidement pour convenir d'un rendez-vous." },
     { "step": "2", "title": "Anamnèse & entretien", "text": "Vous remplissez un questionnaire détaillé, puis nous échangeons 1h à 1h30 pour comprendre l'origine du comportement." },
     { "step": "3", "title": "Recommandations sur-mesure", "text": "Je vous remets des solutions concrètes et adaptées à votre chat et à votre mode de vie." },
-    { "step": "4", "title": "Suivi pendant 2 mois", "text": "Je reste à vos côtés pour ajuster les conseils et avancer vers une cohabitation sereine." }
+    { "step": "4", "title": "Suivi 3 mois / compte-rendu inclus", "text": "Je reste à vos côtés pour ajuster les conseils et avancer vers une cohabitation sereine." }
   ],
   "zones": [
     "Castelnau-le-Lez",

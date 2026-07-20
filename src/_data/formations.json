@@ -1,6 +1,20 @@
 [
   {
     "program": "Formation initiale",
+    "title": "Intervenant en Comportement Félin (ICF)",
+    "logo": "/assets/educhateur.png",
+    "logoAlt": "Logo Educhateur",
+    "org": "Educhateur",
+    "items": [
+      "Connaissance du chat : comportement, communication, émotions, besoins fondamentaux et événements de vie.",
+      "Apprentissage et analyse comportementale : mécanique de l'apprentissage, analyse fonctionnelle (méthode A-B-C) et interprétation des données comportementales.",
+      "Résolution des problématiques : éliminations hors bac, agressions, conflits entre chats, comportements intempestifs et prévention des situations à risque.",
+      "Élaboration de plans d'intervention personnalisés et suivi du client.",
+      "Accompagnement humain, psychologie du client, éthique et déontologie."
+    ]
+  },
+  {
+    "program": "Formation initiale",
     "title": "Comportementaliste spécialiste du chat",
     "logo": "/assets/animautopia.png",
     "logoAlt": "Logo Animautopia",
@@ -20,20 +34,6 @@
     "logoAlt": "Logo VOX Animae",
     "org": "VOX Animae - 2024",
     "text": "Attestation de Connaissances pour les Animaux de Compagnie d'Espèces Domestiques. Elle est obligatoire pour toute personne exerçant une activité liée aux animaux de compagnie d'espèces domestiques."
-  },
-  {
-    "program": "Formation initiale",
-    "title": "Intervenant en Comportement Félin (ICF)",
-    "logo": "/assets/educhateur.png",
-    "logoAlt": "Logo Educhateur",
-    "org": "Educhateur",
-    "items": [
-      "Connaissance du chat : éthologie, émotions, comportements anormaux et mécanique de l'apprentissage.",
-      "Analyse fonctionnelle (méthode A-B-C) et lecture des données comportementales.",
-      "Résolution des problématiques : éliminations hors bac, agressions, comportements intempestifs et conflits entre chats.",
-      "Élaboration de plans d'intervention personnalisés et suivi du client.",
-      "Accompagnement humain, psychologie du client, éthique et déontologie."
-    ]
   },
   {
     "program": "Masterclass",

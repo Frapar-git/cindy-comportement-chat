@@ -8,11 +8,12 @@
     "duration": "1h30",
     "image": "/assets/ground_cat.png",
     "imageAlt": "Chat allongé au sol",
-    "summary": "Éliminations hors bac, conduites agressives, miaulements insistants, cohabitation conflictuelle… Je vous accompagne pour en comprendre les causes et vous proposer des solutions adaptées.",
+    "summary": "Préparer l'arrivée d'un nouveau membre du foyer, préparer une cohabitation ou comprendre un comportement qui vous préoccupe : je vous aide à mieux comprendre la situation afin de mettre en place des recommandations adaptées à votre chat et à votre quotidien.",
     "includes": [
       "Entretien de 1h30",
       "Recommandations personnalisées",
-      "Suivi de 2 mois inclus"
+      "Compte-rendu détaillé",
+      "Suivi de 3 mois"
     ],
     "featured": true
   },
@@ -39,9 +40,9 @@
     "price": "Sur devis",
     "priceNote": "Visites à domicile",
     "duration": "1 passage / jour",
-    "image": "/assets/Grille_tarifaire.png",
-    "imageAlt": "Chat gardé à domicile",
-    "summary": "Une présence attentive et bienveillante, respectueuse du rythme et de la personnalité de votre chat. Bien plus qu'un simple remplissage de gamelle.",
+    "image": "/assets/chat-cafe.png",
+    "imageAlt": "Chat dans un café",
+    "summary": "Confier son chat à une autre personne n'est jamais anodin. Formée au comportement félin, j'adapte chacune de mes visites à son rythme, à ses besoins et à sa personnalité afin qu'il vive votre absence dans les meilleures conditions possibles.",
     "includes": [
       "Nourrissage et eau propre",
       "Nettoyage de la litière",
