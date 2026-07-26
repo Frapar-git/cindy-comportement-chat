@@ -6,8 +6,8 @@
     "price": "130 €",
     "priceNote": "Tarif unique, présentiel ou visio",
     "duration": "1h30",
-    "image": "/assets/ground_cat.png",
-    "imageAlt": "Chat allongé au sol",
+    "image": "/assets/work.png",
+    "imageAlt": "Chat au travail",
     "summary": "Préparer l'arrivée d'un nouveau membre du foyer, préparer une cohabitation ou comprendre un comportement qui vous préoccupe : je vous aide à mieux comprendre la situation afin de mettre en place des recommandations adaptées à votre chat et à votre quotidien.",
     "includes": [
       "Entretien de 1h30",
@@ -24,8 +24,8 @@
     "price": "80 €",
     "priceNote": "Tarif unique, présentiel ou visio",
     "duration": "1h",
-    "image": "/assets/photo-02.png",
-    "imageAlt": "Chat jouant avec une corde",
+    "image": "/assets/cat-hand-3.png",
+    "imageAlt": "Chat qui joue avec une main",
     "summary": "Vous adoptez bientôt un chat, ou vous vivez déjà avec un ou plusieurs félins ? Je vous aide à comprendre leurs besoins et à offrir un environnement adapté, sécurisé et épanouissant.",
     "includes": [
       "Entretien de 1h",
