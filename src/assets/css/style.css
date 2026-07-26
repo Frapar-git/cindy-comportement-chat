@@ -1757,17 +1757,24 @@ body.nav-open {
 }
 
 .modern-form {
+  position: relative;
   display: grid;
   gap: 1rem;
 }
 
-.form-honeypot {
-  position: absolute;
-  left: -9999px;
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-  pointer-events: none;
+.modern-form .form-honeypot,
+input.form-honeypot {
+  position: absolute !important;
+  left: -10000px !important;
+  top: auto !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  opacity: 0 !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
 }
 
 .form-row {
