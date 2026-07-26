@@ -870,10 +870,10 @@ body.nav-open {
   align-items: center;
 }
 
-.map-card {
-  display: flex;
-  flex-direction: column;
+a.map-card {
+  display: block;
   width: 100%;
+  max-width: 100%;
   overflow: hidden;
   padding: 0;
   text-decoration: none;
@@ -885,46 +885,41 @@ body.nav-open {
   transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
-.map-card:hover {
+a.map-card:hover {
   border-color: var(--brand);
   transform: translateY(-2px);
 }
 
-.map-card-compact {
+a.map-card.map-card-compact {
   margin-top: 1rem;
 }
 
-.map-card-img {
+a.map-card .map-card-img {
   display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
   aspect-ratio: 3 / 2;
   object-fit: cover;
+  vertical-align: middle;
   background-color: var(--sand);
 }
 
-.map-card-footer {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  padding: 0.9rem 1.1rem 1.05rem;
-}
-
-.map-card-title {
-  font-family: var(--font-head);
-  font-size: 1.15rem;
+a.map-card .map-card-caption {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.85rem 1.1rem;
   font-weight: 700;
-  color: var(--ink);
-}
-
-.map-card-cta {
+  font-size: 0.95rem;
+  line-height: 1.35;
   color: var(--brand-dark);
-  font-weight: 700;
-  font-size: 0.92rem;
+  background-color: var(--cream);
+  border-top: 1px solid var(--line);
 }
 
-.map-card-cta i {
-  margin-left: 0.25rem;
+a.map-card .map-card-caption i {
+  margin-left: 0.3rem;
   font-size: 0.8em;
 }
 
