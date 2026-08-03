@@ -33,7 +33,10 @@
     "logo": "/assets/vox_animae.png",
     "logoAlt": "Logo VOX Animae",
     "org": "VOX Animae - 2024",
-    "text": "Attestation de Connaissances pour les Animaux de Compagnie d'Espèces Domestiques. Elle est obligatoire pour toute personne exerçant une activité liée aux animaux de compagnie d'espèces domestiques."
+    "items": [
+      "Attestation de Connaissances pour les Animaux de Compagnie d'Espèces Domestiques.",
+      "Elle est obligatoire pour toute personne exerçant une activité liée aux animaux de compagnie d'espèces domestiques."
+    ]
   },
   {
     "program": "Masterclass",

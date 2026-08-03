@@ -28,10 +28,10 @@
     { "icon": "fa-clock-rotate-left", "title": "Suivi 3 mois / compte-rendu inclus", "text": "On ajuste ensemble les recommandations jusqu'à voir des résultats." }
   ],
   "process": [
-    { "step": "1", "title": "Vous me contactez", "text": "Vous décrivez votre situation via le formulaire. Je vous recontacte rapidement pour convenir d'un rendez-vous." },
-    { "step": "2", "title": "Anamnèse & entretien", "text": "Vous remplissez un questionnaire détaillé, puis nous échangeons 1h à 1h30 pour comprendre l'origine du comportement." },
-    { "step": "3", "title": "Recommandations sur-mesure", "text": "Je vous remets des solutions concrètes et adaptées à votre chat et à votre mode de vie." },
-    { "step": "4", "title": "Suivi 3 mois / compte-rendu inclus", "text": "Je reste à vos côtés pour ajuster les conseils et avancer vers une cohabitation sereine." }
+    { "step": "1", "title": "Vous me contactez", "text": "Vous me présentez votre situation via le formulaire de contact. Je reviens vers vous rapidement afin d'échanger sur vos besoins, répondre à vos premières questions et convenir, si nécessaire, d'un rendez-vous." },
+    { "step": "2", "title": "Questionnaire & entretien", "text": "Avant notre entretien, vous remplissez un questionnaire détaillé sur votre chat et son environnement. Nous échangeons ensuite pendant 1 h à 1 h 30 afin de comprendre la situation et d'identifier les différents facteurs qui l'influencent." },
+    { "step": "3", "title": "Recommandations personnalisées", "text": "À l'issue de notre échange, je vous propose des recommandations concrètes et adaptées à votre chat, à son environnement et à votre quotidien." },
+    { "step": "4", "title": "Suivi & compte-rendu inclus", "text": "Vous recevez un compte-rendu détaillé reprenant l'ensemble des recommandations abordées pendant notre entretien. Pendant trois mois, je reste à vos côtés pour répondre à vos questions et ajuster les recommandations en fonction de l'évolution de la situation." }
   ],
   "zones": [
     "Castelnau-le-Lez",
@@ -52,6 +52,7 @@
   ],
   "footerNav": [
     { "label": "Mentions légales", "url": "/mentions-legales/" },
+    { "label": "Politique de paiement", "url": "/politique-de-paiement/" },
     { "label": "Politique en matière de cookies", "url": "/cookies/" },
     { "label": "Politique de confidentialité", "url": "/confidentialite/" },
     { "label": "Conditions d'utilisation", "url": "/conditions/" }

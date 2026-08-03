@@ -47,7 +47,12 @@ mainClass: contact-main
         </div>
         <div class="form-group">
           <label for="subject">Objet</label>
-          <input type="text" id="subject" name="JOB_TITLE" required>
+          <select id="subject" name="JOB_TITLE" required>
+            <option value="" disabled selected>Choisissez un objet</option>
+            <option value="Prendre un rendez-vous pour discuter du cas de mon chat">Prendre un rendez-vous pour discuter du cas de mon chat</option>
+            <option value="Demande d'information concernant vos prestations">Demande d'information concernant vos prestations</option>
+            <option value="Prestation de garde de chat">Prestation de garde de chat</option>
+          </select>
         </div>
         <div class="form-group">
           <label for="message">Votre message</label>
@@ -61,6 +66,13 @@ mainClass: contact-main
             data-theme="light"
           ></div>
         </div>
+        <div class="form-group form-consent">
+          <label class="consent-label" for="privacy-consent">
+            <input type="checkbox" id="privacy-consent" required>
+            <span>J'ai lu la <a href="/confidentialite/">Politique de confidentialité</a> et j'accepte que les informations saisies soient utilisées afin de répondre à ma demande.</span>
+          </label>
+        </div>
+        <p class="form-privacy-note">Les informations recueillies via ce formulaire sont utilisées uniquement pour répondre à votre demande et, le cas échéant, assurer le suivi de votre prise de contact. Pour en savoir plus sur le traitement de vos données personnelles, consultez notre <a href="/confidentialite/">Politique de confidentialité</a>.</p>
         <button type="submit" class="button submit-button">Envoyer ma demande</button>
       </form>
       <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
@@ -74,14 +86,28 @@ mainClass: contact-main
     <aside class="contact-card contact-info-section">
       <h2>Coordonnées</h2>
       <ul class="contact-list">
-        <li><span class="info-icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></span> {{ site.address }}</li>
+        <li>
+          <span class="info-icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></span>
+          <span>34170 Castelnau-le-Lez, près de Montpellier</span>
+        </li>
         <li><span class="info-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></span> <a href="tel:{{ site.phone | replace(' ', '') }}">{{ site.phone }}</a></li>
         <li><span class="info-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></span> <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
       </ul>
       <a class="map-card map-card-compact" href="{{ site.mapsUrl }}" target="_blank" rel="noopener noreferrer">
         <img class="map-card-img" src="/assets/map-castelnau.png" alt="Carte de Castelnau-le-Lez" width="720" height="480" loading="lazy">
-        <span class="map-card-caption">Ouvrir dans Google Maps <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+        <span class="map-card-caption"><strong>Castelnau-le-Lez</strong> · <strong>Montpellier</strong> — Ouvrir dans Google Maps <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
       </a>
+      <div class="visio-card" aria-label="Consultations en visioconférence">
+        <svg class="visio-flag" viewBox="0 0 36 24" role="img" aria-hidden="true">
+          <rect width="12" height="24" fill="#002395"/>
+          <rect x="12" width="12" height="24" fill="#fff"/>
+          <rect x="24" width="12" height="24" fill="#ed2939"/>
+        </svg>
+        <div class="visio-card-body">
+          <p class="visio-card-title">Visioconférence</p>
+          <p class="visio-card-text">Disponible dans tous les <strong>pays francophones</strong>.</p>
+        </div>
+      </div>
     </aside>
   </div>
 </section>

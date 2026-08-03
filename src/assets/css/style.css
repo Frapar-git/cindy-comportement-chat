@@ -551,7 +551,9 @@ body.nav-open {
 }
 
 .usp-title {
+  font-family: var(--font-body);
   font-size: 1.1rem;
+  font-weight: 700;
   margin-bottom: 0.3rem;
 }
 
@@ -698,7 +700,7 @@ body.nav-open {
 }
 
 .service-name {
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.55rem;
 }
 
 .service-tagline {
@@ -725,6 +727,9 @@ body.nav-open {
 .service-summary {
   color: var(--muted);
   font-size: 0.95rem;
+  text-align: justify;
+  text-wrap: pretty;
+  margin-top: 0.35rem;
 }
 
 .check-list {
@@ -788,13 +793,16 @@ body.nav-open {
 
 .process-title {
   font-size: 1.15rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.75rem;
 }
 
 .process-step p {
   color: var(--muted);
   font-size: 0.95rem;
   margin: 0;
+  text-align: justify;
+  text-wrap: pretty;
+  line-height: 1.5;
 }
 
 /* ===========================================================================
@@ -910,12 +918,16 @@ a.map-card .map-card-caption {
   width: 100%;
   box-sizing: border-box;
   padding: 0.85rem 1.1rem;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 0.95rem;
   line-height: 1.35;
   color: var(--brand-dark);
   background-color: var(--cream);
   border-top: 1px solid var(--line);
+}
+
+a.map-card .map-card-caption strong {
+  font-weight: 700;
 }
 
 a.map-card .map-card-caption i {
@@ -986,20 +998,20 @@ a.map-card .map-card-caption i {
 }
 
 .faq-question::after {
-  content: "\f067";
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
+  content: "";
   position: absolute;
-  right: 1.2rem;
+  right: 1.35rem;
   top: 50%;
-  transform: translateY(-50%);
-  color: var(--brand);
-  font-size: 0.85rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-right: 2px solid var(--brand);
+  border-bottom: 2px solid var(--brand);
+  transform: translateY(-65%) rotate(45deg);
   transition: transform 0.25s ease;
 }
 
 .faq-question[aria-expanded="true"]::after {
-  content: "\f068";
+  transform: translateY(-35%) rotate(225deg);
 }
 
 .faq-answer {
@@ -1012,9 +1024,26 @@ a.map-card .map-card-caption i {
 }
 
 .faq-answer ul {
-  padding-left: 1.2rem;
-  list-style: disc;
-  margin-bottom: 0;
+  list-style: none;
+  margin: 0 0 0.75rem;
+  padding: 0;
+}
+
+.faq-answer li {
+  position: relative;
+  padding-left: 1.15rem;
+  margin-bottom: 0.4rem;
+}
+
+.faq-answer li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--brand);
 }
 
 .faq-answer .faq-spacer {
@@ -1171,6 +1200,59 @@ a.map-card .map-card-caption i {
 .payment-note i {
   color: var(--brand);
   flex-shrink: 0;
+}
+
+.payment-note-block {
+  display: block;
+  max-width: 48rem;
+}
+
+.payment-note-title {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0 0 0.65rem;
+  font-weight: 700;
+}
+
+.payment-note-list {
+  list-style: none;
+  margin: 0 0 0.75rem;
+  padding: 0;
+}
+
+.payment-note-list li {
+  position: relative;
+  padding-left: 1.15rem;
+  margin-top: 0.35rem;
+}
+
+.payment-note-list li:first-child {
+  margin-top: 0;
+}
+
+.payment-note-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--brand);
+}
+
+.payment-note-block > p:last-child {
+  margin: 0;
+}
+
+.payment-note-link {
+  margin: 0.7rem 0 0 !important;
+}
+
+.payment-note-link a {
+  color: var(--brand-dark);
+  font-weight: 700;
 }
 
 .offer-chooser {
@@ -1384,14 +1466,14 @@ a.map-card .map-card-caption i {
 }
 
 .bullet-list li::before {
-  content: "\f1b0";
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  color: var(--brand-soft);
+  content: "";
   position: absolute;
-  left: 0;
-  top: 0.15rem;
-  font-size: 0.8rem;
+  left: 0.1rem;
+  top: 0.55em;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--brand);
 }
 
 /* ===========================================================================
@@ -1702,8 +1784,18 @@ a.map-card .map-card-caption i {
 
 .prestations-main #consultations .payment-note,
 .prestations-main #cat-sitting .payment-note {
-  margin-top: 1rem;
+  margin-top: 1.25rem;
   margin-bottom: 0;
+}
+
+.prestations-main .payment-note-aligned {
+  max-width: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.prestations-main #cat-sitting .payment-note-on-cream {
+  background-color: var(--cream);
 }
 
 .prestations-main #cat-sitting + .final-cta {
@@ -1774,6 +1866,7 @@ input.form-honeypot {
 }
 
 .form-group input,
+.form-group select,
 .form-group textarea {
   font-family: var(--font-body);
   font-size: 1rem;
@@ -1785,11 +1878,71 @@ input.form-honeypot {
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
+.form-group select {
+  width: 100%;
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--brand) 50%),
+    linear-gradient(135deg, var(--brand) 50%, transparent 50%);
+  background-position: calc(100% - 18px) calc(50% - 3px), calc(100% - 12px) calc(50% - 3px);
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+  padding-right: 2.2rem;
+}
+
+.form-group textarea {
+  width: 100%;
+  resize: none;
+}
+
 .form-group input:focus,
+.form-group select:focus,
 .form-group textarea:focus {
   outline: none;
   border-color: var(--brand);
   box-shadow: 0 0 0 3px rgba(168, 90, 60, 0.15);
+}
+
+.visio-card {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin: 1rem 0 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--sand);
+}
+
+.visio-flag {
+  width: 2.2rem;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.visio-card-title {
+  margin: 0 0 0.2rem;
+  font-weight: 700;
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.visio-card-text {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.about-main .media-img {
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.about-main .media-img-cindy {
+  object-position: center center;
 }
 
 .form-captcha {
@@ -1882,6 +2035,40 @@ input.form-honeypot {
   max-width: 24ch;
 }
 
+.form-consent {
+  margin-top: 0.25rem;
+}
+
+.consent-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.consent-label input {
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+  width: 1.05rem;
+  height: 1.05rem;
+  accent-color: var(--brand);
+}
+
+.form-privacy-note {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.form-privacy-note a {
+  color: var(--brand-dark);
+}
+
 
 /* ===========================================================================
    Thank-you + legal
@@ -1907,44 +2094,104 @@ input.form-honeypot {
   margin-top: 1rem;
 }
 
-.legal-page {
-  max-width: var(--maxw-text);
+.legal-main .page-hero h1 {
+  max-width: 22ch;
 }
 
-.legal-page h1 {
-  text-align: center;
-  margin-bottom: 1.25rem;
+.legal-main .band {
+  padding-top: 0;
 }
 
-.legal-page h2 {
-  margin-top: 1.75rem;
-  margin-bottom: 0.6rem;
+.legal-card {
+  max-width: 46rem;
+  margin-inline: auto;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  padding: clamp(1.6rem, 4vw, 2.75rem);
+}
+
+.legal-intro {
+  color: var(--ink);
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.35rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.legal-block {
+  padding: 1.15rem 0 1.25rem;
+  border-bottom: 1px solid var(--sand-deep);
+}
+
+.legal-block:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0.35rem;
+}
+
+.legal-card h2 {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin: 0 0 0.7rem;
   font-size: clamp(1.15rem, 2vw, 1.35rem);
 }
 
-.legal-page p,
-.legal-page li {
+.legal-num {
+  flex-shrink: 0;
+  font-family: var(--font-head);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--brand);
+  letter-spacing: 0.04em;
+}
+
+.legal-card p,
+.legal-card li {
   color: var(--muted);
 }
 
-.legal-page a {
+.legal-card a {
   color: var(--brand-dark);
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 
-.legal-page ul {
-  padding-left: 1.25rem;
-  list-style: disc;
-  margin-bottom: 1em;
+.legal-card a:hover {
+  color: var(--brand);
 }
 
-.legal-page li {
-  margin-bottom: 0.4rem;
+.legal-card ul {
+  list-style: none;
+  margin: 0 0 1em;
+  padding: 0;
 }
 
-.legal-main .band {
-  padding-top: clamp(1.25rem, 3vw, 2rem);
+.legal-card li {
+  position: relative;
+  margin-bottom: 0.45rem;
+  padding-left: 1.15rem;
+}
+
+.legal-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--brand);
+}
+
+.legal-updated {
+  margin: 1.75rem 0 0;
+  padding-top: 1.15rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.92rem;
+  font-style: italic;
+  color: var(--muted);
 }
 
 /* ===========================================================================
@@ -2310,6 +2557,10 @@ input.form-honeypot {
     object-position: center 65%;
   }
 
+  .about-main .media-img-cindy {
+    object-position: center center;
+  }
+
   .media-img-short {
     max-height: 220px;
     object-position: center 75%;
@@ -2381,5 +2632,343 @@ input.form-honeypot {
 
   .next-steps-grid::before {
     display: none;
+  }
+}
+
+/* ===========================================================================
+   Prestations v2 (maquette — /prestations-v2/)
+=========================================================================== */
+.prestations-v2-main .page-hero h1 {
+  max-width: 22ch;
+  font-size: clamp(1.55rem, 1.25rem + 1.2vw, 2.15rem);
+}
+
+.prestations-v2-main .page-hero-lead {
+  font-size: 1.02rem;
+}
+
+.pv2-wrap {
+  max-width: 1100px;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+.pv2-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.25rem, 3vw, 2rem);
+  align-items: stretch;
+}
+
+.pv2-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.pv2-photo {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center 28%;
+  background: var(--sand);
+}
+
+.pv2-card:first-child .pv2-photo {
+  object-position: 82% 92%;
+  transform: scale(1.2);
+  transform-origin: 82% 92%;
+}
+
+.pv2-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1.35rem 1.6rem 1.65rem;
+}
+
+.pv2-card h2 {
+  text-align: center;
+  font-size: clamp(1.2rem, 1.05rem + 0.6vw, 1.4rem);
+  margin-bottom: 0.65rem;
+}
+
+.pv2-card-sub {
+  text-align: center;
+  font-weight: 700;
+  color: var(--brand-dark);
+  margin: -0.25rem 0 0.65rem;
+  font-size: 0.95rem;
+}
+
+.pv2-card-body > p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.pv2-includes {
+  background: var(--sand);
+  border-radius: var(--radius-sm);
+  padding: 0.95rem 1rem;
+  margin: 0.35rem 0 1rem;
+}
+
+.pv2-includes-title {
+  margin: 0 0 0.55rem;
+  font-weight: 700;
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.pv2-includes ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pv2-includes li {
+  position: relative;
+  padding: 0.28rem 0 0.28rem 1.55rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.pv2-includes li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.45rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: var(--brand) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M2.5 6.2l2.3 2.3 4.7-4.8'/%3E%3C/svg%3E") center / 0.65rem no-repeat;
+}
+
+.pv2-meta {
+  list-style: none;
+  margin: 0 0 0.85rem;
+  padding: 0;
+}
+
+.pv2-meta li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  color: var(--ink);
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+}
+
+.pv2-meta i {
+  color: var(--brand);
+  margin-top: 0.2rem;
+  width: 1.1rem;
+  text-align: center;
+}
+
+.pv2-travel {
+  display: flex;
+  gap: 0.55rem;
+  align-items: flex-start;
+  margin: 0 0 1.15rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.pv2-travel i {
+  color: var(--brand);
+  margin-top: 0.15rem;
+  flex-shrink: 0;
+}
+
+.pv2-card-body .button {
+  margin-top: auto;
+  align-self: center;
+}
+
+.pv2-notice {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem 1.15rem;
+  margin-top: clamp(2rem, 4vw, 3rem);
+  margin-bottom: clamp(0.5rem, 2vw, 1rem);
+  padding: 1.4rem 1.6rem;
+  background: var(--sand);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.prestations-v2-main .pv2-notice .payment-note-link {
+  margin-top: 0.35rem;
+}
+
+.pv2-notice-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  background: var(--white);
+  color: var(--brand);
+  display: grid;
+  place-items: center;
+  font-size: 1.15rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.pv2-notice-title {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-head);
+  font-size: 1.2rem;
+  color: var(--ink);
+}
+
+.pv2-notice-body ul {
+  list-style: none;
+  margin: 0 0 0.65rem;
+  padding: 0;
+  color: var(--muted);
+}
+
+.pv2-notice-body li {
+  position: relative;
+  padding-left: 1.15rem;
+  margin-top: 0.3rem;
+}
+
+.pv2-notice-body li:first-child {
+  margin-top: 0;
+}
+
+.pv2-notice-body li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--brand);
+}
+
+.pv2-notice-note {
+  margin: 0 0 0.65rem;
+  font-style: italic;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.prestations-v2-main > .band:has(.pv2-notice) {
+  padding-bottom: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+.prestations-v2-main .pv2-tariffs-band.band {
+  padding-top: clamp(2.75rem, 5.5vw, 4.25rem);
+  padding-bottom: 3rem;
+}
+
+.pv2-tariffs {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+}
+
+.pv2-spacer {
+  height: 4rem;
+}
+
+.prestations-v2-main .final-cta {
+  margin-top: 0;
+  padding-top: clamp(3.5rem, 7vw, 5.5rem);
+}
+
+.pv2-tariffs h2 {
+  margin-bottom: 1.25rem;
+  font-size: clamp(1.35rem, 1.1rem + 1vw, 1.7rem);
+}
+
+.pv2-table-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius-sm);
+}
+
+.pv2-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.pv2-table thead th {
+  background: var(--brand);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.85rem 0.75rem;
+}
+
+.pv2-table tbody th,
+.pv2-table tbody td {
+  padding: 0.85rem 0.75rem;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+  background: var(--cream);
+}
+
+.pv2-table tbody tr:nth-child(even) th,
+.pv2-table tbody tr:nth-child(even) td {
+  background: var(--sand);
+}
+
+.pv2-table tbody tr:last-child th,
+.pv2-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.pv2-table tbody th {
+  text-align: left;
+  font-weight: 700;
+}
+
+.pv2-table tbody td {
+  font-weight: 700;
+  text-align: center;
+  color: var(--brand-dark);
+}
+
+.pv2-tariffs-note {
+  margin: 1rem 0 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: left;
+}
+
+@media (max-width: 960px) {
+  .pv2-cards {
+    grid-template-columns: 1fr;
+    max-width: 440px;
+    margin-inline: auto;
+  }
+
+  .pv2-notice {
+    grid-template-columns: 1fr;
+  }
+
+  .prestations-v2-main .pv2-tariffs-band.band {
+    padding-bottom: 4rem;
   }
 }

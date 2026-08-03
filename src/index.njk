@@ -77,7 +77,7 @@ description: Cindy, comportementaliste félin diplômée à Castelnau-le-Lez (34
     <div class="section-head reveal">
       <p class="eyebrow">Mes prestations</p>
       <h2>Un accompagnement adapté à chaque besoin</h2>
-      <p class="section-intro">Des tarifs clairs, sans surprise, en présentiel autour de Montpellier ou en visioconférence partout en France.</p>
+      <p class="section-intro">Découvrez les différentes prestations proposées, à domicile autour de Montpellier ou en visioconférence où que vous soyez.</p>
     </div>
     <div class="service-grid">
       {% for s in services %}
@@ -87,6 +87,7 @@ description: Cindy, comportementaliste félin diplômée à Castelnau-le-Lez (34
         <p class="service-tagline">{{ s.tagline }}</p>
         <p class="service-price">{{ s.price }} <span>· {{ s.duration }}</span></p>
         <p class="service-summary">{{ s.summary }}</p>
+        <p class="pricing-includes">Ce que comprend le tarif&nbsp;:</p>
         <ul class="check-list">
           {% for inc in s.includes %}
           <li><i class="fa-solid fa-check" aria-hidden="true"></i> {{ inc }}</li>
@@ -165,7 +166,7 @@ description: Cindy, comportementaliste félin diplômée à Castelnau-le-Lez (34
     </div>
     <a class="map-card reveal" href="{{ site.mapsUrl }}" target="_blank" rel="noopener noreferrer">
       <img class="map-card-img" src="/assets/map-castelnau.png" alt="Carte de Castelnau-le-Lez et alentours" width="720" height="480" loading="lazy">
-      <span class="map-card-caption">Castelnau-le-Lez &amp; alentours — Ouvrir dans Google Maps <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+      <span class="map-card-caption"><strong>Castelnau-le-Lez</strong> · <strong>Montpellier</strong> — Ouvrir dans Google Maps <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
     </a>
   </div>
 </section>
