@@ -59,6 +59,7 @@ h3 {
   line-height: 1.15;
   color: var(--ink);
   margin: 0 0 0.6em;
+  font-feature-settings: "SOFT" 0, "WONK" 0;
 }
 
 h1 {
@@ -312,6 +313,7 @@ body {
   font-family: var(--font-head);
   font-size: 1.3rem;
   font-weight: 600;
+  font-feature-settings: "SOFT" 0, "WONK" 0, "opsz" 36;
 }
 
 .brand-sub {
@@ -329,9 +331,17 @@ body {
 
 .nav-link {
   position: relative;
+  font-family: var(--font-body);
   font-weight: 600;
+  font-feature-settings: normal;
+  font-variant-ligatures: none;
   color: var(--ink);
   padding: 0.3rem 0;
+}
+
+.nav-link-label {
+  font-family: var(--font-body);
+  font-feature-settings: normal;
 }
 
 .nav-link::after {
@@ -2138,6 +2148,14 @@ input.form-honeypot {
   font-size: clamp(1.15rem, 2vw, 1.35rem);
 }
 
+.legal-card h3 {
+  font-family: var(--font-body);
+  font-size: 1.02rem;
+  font-weight: 700;
+  margin: 1rem 0 0.5rem;
+  color: var(--ink);
+}
+
 .legal-num {
   flex-shrink: 0;
   font-family: var(--font-head);
@@ -2632,343 +2650,5 @@ input.form-honeypot {
 
   .next-steps-grid::before {
     display: none;
-  }
-}
-
-/* ===========================================================================
-   Prestations v2 (maquette — /prestations-v2/)
-=========================================================================== */
-.prestations-v2-main .page-hero h1 {
-  max-width: 22ch;
-  font-size: clamp(1.55rem, 1.25rem + 1.2vw, 2.15rem);
-}
-
-.prestations-v2-main .page-hero-lead {
-  font-size: 1.02rem;
-}
-
-.pv2-wrap {
-  max-width: 1100px;
-  margin-inline: auto;
-  padding-inline: clamp(1.25rem, 4vw, 2.5rem);
-}
-
-.pv2-cards {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(1.25rem, 3vw, 2rem);
-  align-items: stretch;
-}
-
-.pv2-card {
-  display: flex;
-  flex-direction: column;
-  background: var(--white);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow-soft);
-}
-
-.pv2-photo {
-  display: block;
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  object-position: center 28%;
-  background: var(--sand);
-}
-
-.pv2-card:first-child .pv2-photo {
-  object-position: 82% 92%;
-  transform: scale(1.2);
-  transform-origin: 82% 92%;
-}
-
-.pv2-card-body {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  padding: 1.35rem 1.6rem 1.65rem;
-}
-
-.pv2-card h2 {
-  text-align: center;
-  font-size: clamp(1.2rem, 1.05rem + 0.6vw, 1.4rem);
-  margin-bottom: 0.65rem;
-}
-
-.pv2-card-sub {
-  text-align: center;
-  font-weight: 700;
-  color: var(--brand-dark);
-  margin: -0.25rem 0 0.65rem;
-  font-size: 0.95rem;
-}
-
-.pv2-card-body > p {
-  color: var(--muted);
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-.pv2-includes {
-  background: var(--sand);
-  border-radius: var(--radius-sm);
-  padding: 0.95rem 1rem;
-  margin: 0.35rem 0 1rem;
-}
-
-.pv2-includes-title {
-  margin: 0 0 0.55rem;
-  font-weight: 700;
-  color: var(--ink);
-  font-size: 0.95rem;
-}
-
-.pv2-includes ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.pv2-includes li {
-  position: relative;
-  padding: 0.28rem 0 0.28rem 1.55rem;
-  color: var(--muted);
-  font-size: 0.92rem;
-  line-height: 1.45;
-}
-
-.pv2-includes li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.45rem;
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  background: var(--brand) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M2.5 6.2l2.3 2.3 4.7-4.8'/%3E%3C/svg%3E") center / 0.65rem no-repeat;
-}
-
-.pv2-meta {
-  list-style: none;
-  margin: 0 0 0.85rem;
-  padding: 0;
-}
-
-.pv2-meta li {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.55rem;
-  color: var(--ink);
-  font-size: 0.95rem;
-  margin-bottom: 0.4rem;
-}
-
-.pv2-meta i {
-  color: var(--brand);
-  margin-top: 0.2rem;
-  width: 1.1rem;
-  text-align: center;
-}
-
-.pv2-travel {
-  display: flex;
-  gap: 0.55rem;
-  align-items: flex-start;
-  margin: 0 0 1.15rem;
-  padding-top: 0.75rem;
-  border-top: 1px solid var(--line);
-  font-size: 0.82rem;
-  line-height: 1.45;
-  color: var(--muted);
-}
-
-.pv2-travel i {
-  color: var(--brand);
-  margin-top: 0.15rem;
-  flex-shrink: 0;
-}
-
-.pv2-card-body .button {
-  margin-top: auto;
-  align-self: center;
-}
-
-.pv2-notice {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1rem 1.15rem;
-  margin-top: clamp(2rem, 4vw, 3rem);
-  margin-bottom: clamp(0.5rem, 2vw, 1rem);
-  padding: 1.4rem 1.6rem;
-  background: var(--sand);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-}
-
-.prestations-v2-main .pv2-notice .payment-note-link {
-  margin-top: 0.35rem;
-}
-
-.pv2-notice-icon {
-  width: 2.4rem;
-  height: 2.4rem;
-  border-radius: 50%;
-  background: var(--white);
-  color: var(--brand);
-  display: grid;
-  place-items: center;
-  font-size: 1.15rem;
-  box-shadow: var(--shadow-soft);
-}
-
-.pv2-notice-title {
-  margin: 0 0 0.5rem;
-  font-family: var(--font-head);
-  font-size: 1.2rem;
-  color: var(--ink);
-}
-
-.pv2-notice-body ul {
-  list-style: none;
-  margin: 0 0 0.65rem;
-  padding: 0;
-  color: var(--muted);
-}
-
-.pv2-notice-body li {
-  position: relative;
-  padding-left: 1.15rem;
-  margin-top: 0.3rem;
-}
-
-.pv2-notice-body li:first-child {
-  margin-top: 0;
-}
-
-.pv2-notice-body li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.55em;
-  width: 0.4rem;
-  height: 0.4rem;
-  border-radius: 50%;
-  background: var(--brand);
-}
-
-.pv2-notice-note {
-  margin: 0 0 0.65rem;
-  font-style: italic;
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-.prestations-v2-main > .band:has(.pv2-notice) {
-  padding-bottom: clamp(2.5rem, 5vw, 3.5rem);
-}
-
-.prestations-v2-main .pv2-tariffs-band.band {
-  padding-top: clamp(2.75rem, 5.5vw, 4.25rem);
-  padding-bottom: 3rem;
-}
-
-.pv2-tariffs {
-  max-width: 640px;
-  margin: 0 auto;
-  padding: clamp(1.5rem, 3vw, 2.25rem);
-  background: var(--white);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-soft);
-  text-align: center;
-}
-
-.pv2-spacer {
-  height: 4rem;
-}
-
-.prestations-v2-main .final-cta {
-  margin-top: 0;
-  padding-top: clamp(3.5rem, 7vw, 5.5rem);
-}
-
-.pv2-tariffs h2 {
-  margin-bottom: 1.25rem;
-  font-size: clamp(1.35rem, 1.1rem + 1vw, 1.7rem);
-}
-
-.pv2-table-wrap {
-  overflow-x: auto;
-  border-radius: var(--radius-sm);
-}
-
-.pv2-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.95rem;
-}
-
-.pv2-table thead th {
-  background: var(--brand);
-  color: #fff;
-  font-weight: 700;
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 0.85rem 0.75rem;
-}
-
-.pv2-table tbody th,
-.pv2-table tbody td {
-  padding: 0.85rem 0.75rem;
-  border-bottom: 1px solid var(--line);
-  color: var(--ink);
-  background: var(--cream);
-}
-
-.pv2-table tbody tr:nth-child(even) th,
-.pv2-table tbody tr:nth-child(even) td {
-  background: var(--sand);
-}
-
-.pv2-table tbody tr:last-child th,
-.pv2-table tbody tr:last-child td {
-  border-bottom: none;
-}
-
-.pv2-table tbody th {
-  text-align: left;
-  font-weight: 700;
-}
-
-.pv2-table tbody td {
-  font-weight: 700;
-  text-align: center;
-  color: var(--brand-dark);
-}
-
-.pv2-tariffs-note {
-  margin: 1rem 0 0;
-  font-size: 0.85rem;
-  color: var(--muted);
-  text-align: left;
-}
-
-@media (max-width: 960px) {
-  .pv2-cards {
-    grid-template-columns: 1fr;
-    max-width: 440px;
-    margin-inline: auto;
-  }
-
-  .pv2-notice {
-    grid-template-columns: 1fr;
-  }
-
-  .prestations-v2-main .pv2-tariffs-band.band {
-    padding-bottom: 4rem;
   }
 }
